@@ -161,6 +161,7 @@ wss.on('connection', ws => {
   ws.on('error', () => {
     peers = peers.filter(p => p.ws !== ws);
   });
+  
 });
 
 const PORT = process.env.PORT || 3000;
